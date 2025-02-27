@@ -22,3 +22,11 @@ for (let city of cities) {
         console.log(city + " Tunisie ou Madagascar")
     }
 }
+
+//ajouter d'autre ville
+cities.push("Mananjary")
+cities.push("Manakara")
+
+for (let city in cities) {
+    console.log(cities[city])
+}

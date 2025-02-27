@@ -19,3 +19,9 @@ for (var _i = 0, cities_1 = cities; _i < cities_1.length; _i++) {
         console.log(city + " Tunisie ou Madagascar");
     }
 }
+//ajouter d'autre ville
+cities.push("Mananjary");
+cities.push("Manakara");
+for (var city in cities) {
+    console.log(cities[city]);
+}
