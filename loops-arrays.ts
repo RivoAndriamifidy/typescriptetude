@@ -7,3 +7,9 @@ for (let i = 0; i<marks.length; i++){
 
 let average: number = total / marks.length
 console.log(`Mark average ${average}`)
+
+let cities: string[] = ["Casablanc", "Rabat", "Fianaren", "tulearen", "Tana", "Tamataven"];
+
+for (let i = 0; i < cities.length; i++) {
+    console.log(cities[i])
+}

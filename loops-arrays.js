@@ -5,3 +5,7 @@ for (var i = 0; i < marks.length; i++) {
 }
 var average = total / marks.length;
 console.log("Mark average ".concat(average));
+var cities = ["Casablanc", "Rabat", "Fianaren", "tulearen", "Tana", "Tamataven"];
+for (var i = 0; i < cities.length; i++) {
+    console.log(cities[i]);
+}
