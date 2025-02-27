@@ -1,32 +1,30 @@
-var Person = /** @class */ (function () {
-    function Person(fName, lName) {
-        this._firstName = fName;
-        this._lastName = lName;
+"use strict";
+class Person {
+    // private _firstName: string
+    // private _lastName: string
+    constructor(_firstName, _lastName) {
+        this._firstName = _firstName;
+        this._lastName = _lastName;
     }
-    Object.defineProperty(Person.prototype, "firstName", {
-        get: function () {
-            return this._firstName;
-        },
-        set: function (value) {
-            this._firstName = value;
-        },
-        enumerable: false,
-        configurable: true
-    });
-    Object.defineProperty(Person.prototype, "lastName", {
-        get: function () {
-            return this._lastName;
-        },
-        set: function (value) {
-            this._lastName = value;
-        },
-        enumerable: false,
-        configurable: true
-    });
-    return Person;
-}());
-var myPerson = new Person("Rivo", "Andriamifidy");
+    // constructor(fName: string, lName: string){
+    //     this._firstName = fName
+    //     this._lastName = lName
+    // }
+    get firstName() {
+        return this._firstName;
+    }
+    set firstName(value) {
+        this._firstName = value;
+    }
+    get lastName() {
+        return this._lastName;
+    }
+    set lastName(value) {
+        this._lastName = value;
+    }
+}
+let myPerson = new Person("Rivo", "Andriamifidy");
 //let myPerson = new Person()
 //myPerson.firstName = "Rivo"
 //myPerson.lastName = "Andriamifidy"
-console.log("Bonjour, ".concat(myPerson.firstName, " ").concat(myPerson.lastName));
+console.log(`Bonjour, ${myPerson.firstName} ${myPerson.lastName}`);

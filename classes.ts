@@ -1,11 +1,14 @@
 class Person{
-    private _firstName: string
-    private _lastName: string
+    // private _firstName: string
+    // private _lastName: string
 
-    constructor(fName: string, lName: string){
-        this._firstName = fName
-        this._lastName = lName
+    constructor(private _firstName: string, private _lastName: string){
+        
     }
+    // constructor(fName: string, lName: string){
+    //     this._firstName = fName
+    //     this._lastName = lName
+    // }
 
     public get firstName():string {
         return this._firstName

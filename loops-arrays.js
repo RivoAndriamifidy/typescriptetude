@@ -1,17 +1,17 @@
-var marks = [15, 17.5, 11, 19, 13.5, 18.5];
-var total = 0;
-for (var i = 0; i < marks.length; i++) {
+"use strict";
+let marks = [15, 17.5, 11, 19, 13.5, 18.5];
+let total = 0;
+for (let i = 0; i < marks.length; i++) {
     total += marks[i];
 }
-var average = total / marks.length;
-console.log("Mark average ".concat(average));
-var cities = ["Casablanc", "Rabat", "Fianaren", "tulearen", "Tana", "Tamataven"];
-for (var i = 0; i < cities.length; i++) {
+let average = total / marks.length;
+console.log(`Mark average ${average}`);
+let cities = ["Casablanc", "Rabat", "Fianaren", "tulearen", "Tana", "Tamataven"];
+for (let i = 0; i < cities.length; i++) {
     console.log(cities[i]);
 }
 //simple boule + if
-for (var _i = 0, cities_1 = cities; _i < cities_1.length; _i++) {
-    var city = cities_1[_i];
+for (let city of cities) {
     if (city == "Casablanc") {
         console.log(city + " Maroc");
     }
@@ -22,6 +22,6 @@ for (var _i = 0, cities_1 = cities; _i < cities_1.length; _i++) {
 //ajouter d'autre ville
 cities.push("Mananjary");
 cities.push("Manakara");
-for (var city in cities) {
+for (let city in cities) {
     console.log(cities[city]);
 }
