@@ -1,9 +1,9 @@
-class Person{
+export class Person{
     // private _firstName: string
     // private _lastName: string
 
     constructor(private _firstName: string, private _lastName: string){
-        
+
     }
     // constructor(fName: string, lName: string){
     //     this._firstName = fName
@@ -24,9 +24,9 @@ class Person{
     }
 }
 
-let myPerson = new Person("Rivo", "Andriamifidy")
+//let myPerson = new Person("Rivo", "Andriamifidy")
 //let myPerson = new Person()
 //myPerson.firstName = "Rivo"
 //myPerson.lastName = "Andriamifidy"
 
-console.log(`Bonjour, ${myPerson.firstName} ${myPerson.lastName}`)
+//console.log(`Bonjour, ${myPerson.firstName} ${myPerson.lastName}`)

@@ -1,4 +1,6 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.Person = void 0;
 class Person {
     // private _firstName: string
     // private _lastName: string
@@ -23,8 +25,9 @@ class Person {
         this._lastName = value;
     }
 }
-let myPerson = new Person("Rivo", "Andriamifidy");
+exports.Person = Person;
+//let myPerson = new Person("Rivo", "Andriamifidy")
 //let myPerson = new Person()
 //myPerson.firstName = "Rivo"
 //myPerson.lastName = "Andriamifidy"
-console.log(`Bonjour, ${myPerson.firstName} ${myPerson.lastName}`);
+//console.log(`Bonjour, ${myPerson.firstName} ${myPerson.lastName}`)
