@@ -13,3 +13,12 @@ let cities: string[] = ["Casablanc", "Rabat", "Fianaren", "tulearen", "Tana", "T
 for (let i = 0; i < cities.length; i++) {
     console.log(cities[i])
 }
+
+//simple boule + if
+for (let city of cities) {
+    if (city == "Casablanc") {
+        console.log(city + " Maroc")
+    }else{
+        console.log(city + " Tunisie ou Madagascar")
+    }
+}

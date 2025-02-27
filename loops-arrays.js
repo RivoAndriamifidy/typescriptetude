@@ -9,3 +9,13 @@ var cities = ["Casablanc", "Rabat", "Fianaren", "tulearen", "Tana", "Tamataven"]
 for (var i = 0; i < cities.length; i++) {
     console.log(cities[i]);
 }
+//simple boule + if
+for (var _i = 0, cities_1 = cities; _i < cities_1.length; _i++) {
+    var city = cities_1[_i];
+    if (city == "Casablanc") {
+        console.log(city + " Maroc");
+    }
+    else {
+        console.log(city + " Tunisie ou Madagascar");
+    }
+}
