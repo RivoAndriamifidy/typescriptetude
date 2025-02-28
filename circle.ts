@@ -21,6 +21,6 @@ export class Circle extends Shape{
     }
 
     calculateArea(): number {
-        return Math.PI * Math.pow(2, this._radius)
+        return Math.PI * Math.pow( this._radius, 2)
     }
 }
